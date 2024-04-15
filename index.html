@@ -15,8 +15,21 @@
       background-color: #f8f9fa;
       padding: 2rem;
     }
+    .new-line {
+      display: block;
+    }
+    .row {
+      margin: 0;
+    }
     .portfolio-item {
       margin-bottom: 30px;
+    }
+
+    /* media queries */
+    @media (max-width: 576px) {
+      .display-4 {
+        font-size: 2rem; /* Reduce font size to display-5 on smaller screens */
+      }
     }
   </style>
 </head>
@@ -46,7 +59,7 @@
   </nav>
 
   <div class="jumbotron text-center">
-    <h1 class="display-4">Hello, I'm Ann Ekeh</h1>
+    <h1 class="display-4">Hello, <span class="new-line">I'm Ann Ekeh</span></h1>
     <p class="lead">UI/UX Designer</p>
   </div>
 
@@ -67,16 +80,19 @@
   <div id="portfolio" class="container">
     <h2>Portfolio</h2>
     <div class="row">
-      <div class="col-md-4 portfolio-item">
+      <div
+        class="col-md-4 portfolio-item px-0"
+        style="width: 275px; max-width: 275px; margin: 0 auto;"
+      >
         <a
           href="https://www.figma.com/file/uj4n5GGaAv1H8ZSWtkniWf/DoctorEase?type=design&node-id=32-431&mode=design&t=Rdwa1CkDbF1VTbFB-0"
           target="_blank"
         >
           <img 
-            src="./images/mockups/doctor-ease.png"
+            src="./images/mockups/doctor-ease2.png"
             alt="Project 1" 
             class="img-fluid"
-            style="width: 270px; height: 500px;"
+            style="width: 100%; height: 500px;"
           />
         </a>        
         <h4>Doctor Ease</h4>
@@ -89,36 +105,60 @@
           efficient healthcare delivery at your fingertips.
         </p>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div
+        class="col-md-4 portfolio-item px-0"
+        style="width: 275px; max-width: 275px; margin: 0 auto;"
+      >
         <a
           href=""
           target="_blank"
         >
           <img 
-            src="./images/mockups/doctor-ease.png"
+            src="./images/mockups/doctor-ease2.png"
             alt="Project 2" 
             class="img-fluid"
-            style="width: 270px; height: 500px;"
+            style="width: 100%; height: 500px;"
           />
         </a>  
        <h4>Project 2</h4>
         <p>Description of project 2</p>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div
+        class="col-md-4 portfolio-item px-0"
+        style="width: 275px; max-width: 275px; margin: 0 auto;"
+      >
         <a
           href=""
           target="_blank"
         >
           <img 
-            src="./images/mockups/doctor-ease.png"
+            src="./images/mockups/doctor-ease2.png"
             alt="Project 3" 
             class="img-fluid"
-            style="width: 270px; height: 500px;"
+            style="width: 100%; height: 500px;"
           />
         </a>  
         <h4>Project 3</h4>
         <p>Description of project 3</p>
       </div>
+      <div
+      class="col-md-4 portfolio-item px-0"
+      style="width: 275px; max-width: 275px; margin: 0 auto;"
+    >
+      <a
+        href=""
+        target="_blank"
+      >
+        <img 
+          src="./images/mockups/doctor-ease2.png"
+          alt="Project 3" 
+          class="img-fluid"
+          style="width: 100%; height: 500px;"
+        />
+      </a>  
+      <h4>Project 4</h4>
+      <p>Description of project 4</p>
+    </div>
     </div>
   </div>
 
